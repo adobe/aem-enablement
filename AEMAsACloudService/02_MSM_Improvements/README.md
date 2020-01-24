@@ -37,7 +37,7 @@ In this scenario, we will create a Livecopy and explore the Blueprint and the Ro
 2. Open the ` Page Properties `
 3. Goto the ` Blueprint ` Tab
 4. Click ` Rollout  ` ![rollout](./images/2.png)
-5. Select all Live Copies and Submit
+5. Select all Live Copies and click Rollout button
 
     > ![2.gif](./images/2.gif)
 
