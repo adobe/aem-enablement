@@ -58,7 +58,7 @@ In this scenario, we will create a Livecopy and explore the Blueprint and the Ro
 
     > ![4.png](./images/4.png)
 
-6. Select the desired live copy and submit
+6. Select the desired live copy and click Rollout button
 
     > ![5.png](./images/5.png)
 
