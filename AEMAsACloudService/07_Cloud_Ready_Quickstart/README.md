@@ -27,8 +27,6 @@ In this lesson we will learn how to download and setup the local AEM Environment
 
 1. Go to [Software Distribution Portal](https://downloads.experiencecloud.adobe.com/)
 
-* Note : This is internal link, we should have a public link by GA 
-
 2. Find the latest version released (It should be at end of the page) and click to see list of available jars, docs, files etc for the version.
 3. Download the jar file which should be named as *cq-quickstart-cloudready-V16068.jar* - Version name will be different
 4. Put the downloaded jar file and license file in one folder.
