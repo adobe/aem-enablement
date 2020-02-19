@@ -7,6 +7,13 @@ Versioning pages before deletion allows restoring them after deletion. Page vers
 
 Page versioning before deletion is now optional. The default behavior is "yes", to ensure consistency with previous behavior.
 
+
+#### Pre-requisite
+You need AEM as a Cloud Program with Author tier. 
+
+* Note :For most training environments, author tier already have AEM sample site. Incase you don't see a site in your author tier then you can follow [Scenario 4 - Deploy Custom Project(./04_Deploy_Custom_Project/README.md) and then comeback to this scenario.
+
+
 #### Lesson Context
 
 In this scenario we will understand how pages are archived in AEM Sites 
