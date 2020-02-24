@@ -66,12 +66,13 @@ This scenario comprises of 3 parts:
 6. Update the `pom.xml` file with the following [code](https://git.corp.adobe.com/gist/vmitra/24c136f38b8d9e6597b14dca917a22a2)
 7. Add `pom.xml` to the current project
     > ` git add pom.xml`
-8. Test project sanity by running `mvn verify`
-9. Commit the `GIT` Changes
+8. Update the `pom.xml` file for the `dispatcher` module with the following [code](https://git.corp.adobe.com/gist/vmitra/8ddbce3097fb73eb2914bbf3e165f55d)
+9. Test project sanity by running `mvn verify`
+10. Commit the `GIT` Changes
     > ` git commit -m "moving wknd" `
-10. Push the latest changes to Remote Origin GitHub
+11. Push the latest changes to Remote Origin GitHub
     > ` git push -f origin master `
-11. Resulting GitHub will look something like:
+12. Resulting GitHub will look something like:
 
     > ![wknd_project_3](./resources/wknd_project_3.PNG) ![wknd_project_4](./resources/wknd_project_4.PNG)
     
@@ -157,7 +158,7 @@ Exact Steps and Git Commands are as below:
 
     > ` git checkout master `
 
-    > ` git remote add WKND-Events <path to cloned WKND-Events Git repository> ` <br/> e.g.  ` git remote add WKND-Events https://github.com/varunmitra/WKND-Events.git `
+    > ` git remote add WKND-Events <path to cloned WKND-Events Git repository> ` <br/> e.g.  ` git remote add WKND-Events https://github.com/varunmitra/WKND_Events.git `
 
 
     > ` git fetch WKND-Events `

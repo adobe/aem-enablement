@@ -23,24 +23,17 @@ In this scenario, we will define a custom processing profile and apply it to an 
 
     > ![1.PNG](./images/1.png)
 
-2. Select the ` Standard ` Profile and ` Copy `
+2. Click `Create`
 
-    > ![4.PNG](./images/4.PNG)
-
-    > Standard profile is the default processing profile and cannot be edited or deleted. By copying, we creating a replica of this profile for editing.
-
-3. Provide a name for the new profile and click ` Copy `
+3. Provide a name for the new profile.
+4. Create a custom rendition for png and jpg. 
+    > Set the appropriate height and width.
 
     > ![5.PNG](./images/5.PNG)
 
 
-4. Select the new custom profile and click ` Edit  `
+5. `Save`
 
-    > ![6.PNG](./images/6.PNG)
-
-    > ![7.PNG](./images/7.PNG)
-
-5. Make suitable changes to the profile and ` Save `.
 6. Select Profile and use the ` Apply Profile to Folder(s) ` wizard. 
 
     > ![8.PNG](./images/8.png)
