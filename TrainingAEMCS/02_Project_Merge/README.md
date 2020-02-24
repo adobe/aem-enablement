@@ -42,7 +42,7 @@ This scenario comprises of 3 parts:
 
     > ` git add . ` 
     
-    > ` git commit ` 
+    > ` git commit -m 1_commit` 
     
     > ` git remote add origin <http URL for the origin git> ` <br/><br/>
     > e.g.  ` git remote add origin https://github.com/varunmitra/WKND.git `
@@ -57,7 +57,7 @@ This scenario comprises of 3 parts:
 2. Create a new directory 
     > ` mkdir wknd `
 3. Move projects and files inside the newly created directory
-    > ` git mv pom.xml core it.launcher it.tests ui.content ui.apps wknd `
+    > ` git mv pom.xml all core it.launcher it.tests repository-structure ui.content.sample ui.frontend ui.content ui.apps wknd `
 4. Resulting folder structure will look like:
 
     > ![wknd_project_1](./resources/wknd_project_1.PNG)
