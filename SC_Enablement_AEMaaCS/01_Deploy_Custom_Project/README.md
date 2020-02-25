@@ -58,7 +58,7 @@ Cloud Manager is in charge of all orchestrations and deployments to the instance
 16. Provide a commit message and `Commit to Master`
     > ![4.png](./assets/4.PNG)
 17. Click `Push to Master`
-    >![5.png](./assets/5.PNG)
+    >![5.png](./assets/5.png)
     
 
     
