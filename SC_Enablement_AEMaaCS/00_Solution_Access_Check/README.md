@@ -15,23 +15,24 @@ Cloud Manager is in charge of all orchestrations and deployments to the instance
 
 ### Step 1. Solution Access Check
 
-1. In an Incongnito Window, navigate to https://experience.adobe.com/#/@wwfovlab012/experiencemanager
-2. Click the `Launch` Button
+1. In an Incongnito Window, navigate to https://experience.adobe.com/#/@wwfovlab013/experiencemanager 
+2. Login using the Credentials provided in [Google Sheet](https://docs.google.com/spreadsheets/d/1_NlukckAvLPJ-v3HB6-YOFEueT-NWdXz5AEUwLvXeAc/edit?usp=sharing)
+3. Click the `Launch` Button
     > ![0.png](./images/0.png)
 
     > ![4.png](./images/4.png)
-3. Select the assigned Cloud Manager Program
+4. Select the assigned Cloud Manager Program
     > ![5.png](./images/5.png)
-4. Click `Add Environment Button`.
-5. Select `Environment type` to `Development` and `Cloud Region` to `East US`
-    > ![1.png](./images/1.png)
-6. Click `Save`.
-7. Wait for the Environment to come up.
-8. Click `Add Pipeline` Button.
-    > ![2.png](./images/2.png)
-9. Set up a Deployment Pipeline and a Non Production Pipeline
-    > ![3.png](./images/3.png)
+5. Verify the Program Details 
 
-    > ``` In the next exercise we will execute these pipelines for deploying code```
+    * Click on `aem-xxx-dev` environment URL and verify access to AEM Author Server
+    * Click on `Deploy to Dev` Pipeline and verify the Deployment Environment.
+6. Click the `Details` Button in the Environment Card or goto the `Environment` Tab
+    > ![6.png](./images/6.png)
+7. You can request a new environment by clicking `Add Environment Button`.
+8. Click ` Activity ` Tab and verify the status for previous pipeline executions.
+9. Go back to the ` Overview ` Tab
+10. In the `Environments` card, verify if the new update is available for Cloud Services.
+    > ![7.png](./images/7.PNG)
 
-    > ``` As an extra credit, set up a Production + Stage Environment and a Production Pipeline```
+    > ` In the next exercise we will execute Deployment pipelines for deploying code and updating our Instance `
