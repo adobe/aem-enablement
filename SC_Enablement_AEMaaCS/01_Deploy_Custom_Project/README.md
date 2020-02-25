@@ -12,16 +12,25 @@ Cloud Manager is in charge of all orchestrations and deployments to the instance
 #### Pre-requisites
 * A provisioned AEM Cloud Program 
 * Access to the Cloud Manager Git Repository
+* [GitHub Desktop](https://desktop.github.com/)
 
-#### Pre-requisites Create a Project
-1. Create a new project using the latest Archetype or have an existing project
+
 
 
 ### Step 1. Push your project code to Git Repository
 
+1. Launch GitHub Desktop.
+2. Go to File > Clone Repository
+3. Select the URL tab 
+4. Add the following GitHub URL
+    > https://git.corp.adobe.com/aem-technical-marketing/com.adobe.aem.demos.all-demos
+
+    > ![1.PNG](./assets/1.PNG)
+
+5. Clone
+6. Locate
 1. Clone [All Demos for AEM as a Cloud Service](https://internal.adobedemo.com/content/demo-hub/en/demos/external/aem-all-demos.html)
-    > ` git clone https://git.corp.adobe.com/aem-technical-marketing/com.adobe.aem.demos.all-demos ` <br><br>
-    > ` cd com.adobe.aem.demos.all-demos `
+   
 
 2. Navigate to Cloud Manager Program.
     > ![cm_program](./assets/cm_program.PNG)
