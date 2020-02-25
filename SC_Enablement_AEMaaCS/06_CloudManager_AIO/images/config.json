@@ -1,0 +1,9 @@
+//config.json 
+{
+  "client_id": "",
+  "client_secret": "",
+  "jwt_payload": {
+    
+},
+  "token_exchange_url": "https://ims-na1.adobelogin.com/ims/exchange/jwt"
+}
