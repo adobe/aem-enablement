@@ -17,7 +17,7 @@ Cloud Manager is in charge of all orchestrations and deployments to the instance
 
 
 
-### Step 1. Push your project code to Git Repository
+### Clone All Demo GitHub
 
 1. Launch GitHub Desktop.
 2. Go to File > Clone Repository
@@ -28,22 +28,37 @@ Cloud Manager is in charge of all orchestrations and deployments to the instance
     > ![1.PNG](./assets/1.PNG)
 
 5. Clone
-6. Locate
-1. Clone [All Demos for AEM as a Cloud Service](https://internal.adobedemo.com/content/demo-hub/en/demos/external/aem-all-demos.html)
+6. Click `Fetch Origin`
+    > ![3.png](./assets/3.png)
+7. Go to Repository > Show in Explorer 
+    > ![2.PNG](./assets/2.PNG)
+8. Keep the Explorer/Finder Window Open.
+
+#### Clone Cloud Manager GIT Repository
    
 
-2. Navigate to Cloud Manager Program.
+1. Navigate to Cloud Manager Program.
     > ![cm_program](./assets/cm_program.PNG)
-3. Click on Manage GIT Button
+2. Click on Manage GIT Button
     > ![manage GIT](./assets/manageGIT.png)
-4. Copy the GIT URL and Password to a text file for later use
+3. Copy the GIT URL and Password to a text file for later use
     > ![copy GIT URL and Password](./assets/copyLink.png)
-5. Navigate back to Command Prompt and add Cloud Manager GIT Repository as a Remote repository
-    > ` git remote add adobe <Cloud Manager Git Url> ` 
-6. Verify
-    > ` git remote -v `
-7. Push changes to Cloud Manager GIT Repository
-    > ` git push adobe master:all-demos `
+5. Navigate back to GitHub Desktop
+6. Go to File > Clone Repository
+7. Select the URL tab 
+8. Add the following Cloud Manager GitHub URL
+9. Clone
+10. Authenticate using User Id and Password copied from Cloud Manager UI
+11. Click `Fetch Origin`
+    > ![3.png](./assets/3.png)
+12. Go to Repository > Show in Explorer
+13. Delete all the content except `.git` folder
+14. Copy the all the content, excluding `.git` folder from the All Demo's Git Folder
+15. Paste the content in the Cloud Manager Git Repository Folder.
+16. Provide a commit message and `Commit to Master`
+    > ![4.png](./assets/4.PNG)
+17. Click `Push to Master`
+    >![5.png](./assets/5.PNG)
     
 
     
