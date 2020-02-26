@@ -65,4 +65,4 @@ With AEM as a Cloud Servivce, instead of configuring and maintaining indices on 
 
 
 ## Additional Resources
-* [KT- AEM Cloud Service - Search & Indexing]([LinkURL](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/indexing.html)
+* [KT- AEM Cloud Service - Search & Indexing](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/indexing.html)
