@@ -42,7 +42,7 @@ In order to setup the Cloud Manager plugin for the Adobe I/O CLI, we will follow
 
 1. Navigate to https://console.adobe.io/integrations
 2. Select the correct IMS Org 
-3. Look up the integration created for [Scenario 3](./../03_CloudManager_API)
+3. Look up the integration created for [Scenario 3](./../05_CloudManager_API)
 4. Download [config.json](./images/config.json)
 
 > ` Place the file within the Adobe IO CLI directory ` <br>
