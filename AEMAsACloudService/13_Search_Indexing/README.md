@@ -65,8 +65,4 @@ With AEM as a Cloud Servivce, instead of configuring and maintaining indices on 
 
 
 ## Additional Resources
-* [KT- AEM Cloud Service - Search & Indexing]([LinkURL](https://wiki.corp.adobe.com/pages/viewpage.action?pageId=1670728789))
-* [Index Management Using Blue-Green Deployments](https://wiki.corp.adobe.com/x/M0dOWw)
-* [How to Change Index Definition in Skyline](https://wiki.corp.adobe.com/display/WEM/How+to+Change+Index+Definitions+in+Skyline)
-* [Search and Indexing in the Cloud](https://wiki.corp.adobe.com/display/WEM/Search+and+Indexing+in+the+Cloud)
-* [Remote Index Using ElasticSearch] (https://wiki.corp.adobe.com/display/WEM/Remote+Index+Using+Elasticsearch)
+* [KT- AEM Cloud Service - Search & Indexing](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/indexing.html)
