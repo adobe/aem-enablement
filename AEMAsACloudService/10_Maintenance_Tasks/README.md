@@ -53,11 +53,30 @@ In this scenario we will configure and schedule Maintenance Tasks for an AEM as 
 15.10.2019 14:25:00.042 *INFO* [pool-21-thread-1] com.adobe.granite.maintenance.crx.impl.RevisionCleanupTask Starting RevisionGC with compaction type tail
 15.10.2019 14:25:00.048 *INFO* [TarMK revision gc [C:\Users\vmitra\Documents\AEM\skyline\crx-quickstart\repository\segmentstore]] org.apache.jackrabbit.oak.segment.file.FileStore TarMK GC #1: started
 ```
-##### Step 2. Synchronize the Maintenance Tasks with Source Code
+##### Step 2. Set up Version Purge Maintenance Task
+
+1. Go to CRX DE Lite on local AEM Instance.
+2. Navigate to ` /apps/<project-name>/config.author
+3. Create an OSGI configuration for Day CQ WCM Version Purge Task with the following/similar properties:
+    >  {
+         "jcr:primaryType": "sling:OsgiConfig",<br>
+  "jcr:createdBy": "admin",
+  "versionpurge.recursive": true,
+  "jcr:created": "Sun Feb 23 2020 17:03:10 GMT+0000",
+  "versionpurge.minVersions": 0,
+  "versionpurge.maxAgeDays": 50,
+  "versionpurge.maxVersions": 5,
+  "versionpurge.paths": "/content"
+}
+4. Repeat the above steps to create Adobe Granite Workflow Purge Configuration.
+
+##### Step 3. Synchronize the Maintenance Tasks with Source Code
 
 1. Navigate to ` <git-project-name>\ui.content\src\main\content\META-INF\vault `
 2. Open the ` filter.xml ` file and add the following filter definition: 
     > ` <filter root="/conf/global/settings/granite/operations/maintenance" mode="merge"/> `
+
+    > ` <filter root="/apps/<your-project>/config.author `
 3. Navigate to ` ./../../jcr_root ` using command prompt 
 4. Use Filevault to serialize the maintenance task configuration to Source Code 
     >  ` vlt --credentials admin:admin co http://localhost:4502/crx --force `
