@@ -137,7 +137,7 @@ We now need to populate the first handful of lines in the ` .env ` file. To do t
 
 10. To copy the ` Private Key ` without any line breaks run the following command:
 
-    > ` npm run clean-private-key | pbcopy `
+    > ` node clean-private-key.js `
 
     > Paste the private key into a notepad before specifying the values in ` .env ` file
 11. ` .env ` file would look something like
