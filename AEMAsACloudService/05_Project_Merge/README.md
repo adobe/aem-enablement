@@ -15,7 +15,7 @@ This scenario comprises of 3 parts:
 
 
 #### Pre-requisites
-1. github.com account
+1. github.com account or a GIT repository on https://git.corp.adobe.com
 2. [git](https://git-scm.com/downloads) command line or [GitHub Desktop](https://desktop.github.com/)
 3. Cloud Ready Adobe Experience Manager
 4. Apache Maven (3.3.9 or newer)
@@ -25,8 +25,8 @@ This scenario comprises of 3 parts:
 
 ### Step 1. Clone the WKND Project
 
-1. Clone [WKND Sites Project](https://github.com/adobe/aem-guides-wknd/tree/solution/chapter-8)
-    > ` git clone --branch solution/chapter-8 https://github.com/adobe/aem-guides-wknd.git `
+1. Clone [WKND Sites Project](https://github.com/adobe/aem-guides-wknd/tree/develop)
+    > ` git clone --branch develop https://github.com/adobe/aem-guides-wknd.git `
 
 2. Set up an empty Git Repository 
     > ` This GIT repository will be referred to as Origin `
@@ -42,7 +42,7 @@ This scenario comprises of 3 parts:
 
     > ` git add . ` 
     
-    > ` git commit ` 
+    > ` git commit -m 1_commit` 
     
     > ` git remote add origin <http URL for the origin git> ` <br/><br/>
     > e.g.  ` git remote add origin https://github.com/varunmitra/WKND.git `
@@ -57,7 +57,7 @@ This scenario comprises of 3 parts:
 2. Create a new directory 
     > ` mkdir wknd `
 3. Move projects and files inside the newly created directory
-    > ` git mv pom.xml core it.launcher it.tests ui.content ui.apps wknd `
+    > ` git mv pom.xml all core it.launcher it.tests repository-structure ui.content.sample ui.frontend ui.content ui.apps wknd `
 4. Resulting folder structure will look like:
 
     > ![wknd_project_1](./resources/wknd_project_1.PNG)
@@ -66,12 +66,13 @@ This scenario comprises of 3 parts:
 6. Update the `pom.xml` file with the following [code](https://git.corp.adobe.com/gist/vmitra/24c136f38b8d9e6597b14dca917a22a2)
 7. Add `pom.xml` to the current project
     > ` git add pom.xml`
-8. Test project sanity by running `mvn verify`
-9. Commit the `GIT` Changes
+8. Update the `pom.xml` file for the `dispatcher` module with the following [code](https://git.corp.adobe.com/gist/vmitra/8ddbce3097fb73eb2914bbf3e165f55d)
+9. Test project sanity by running `mvn verify`
+10. Commit the `GIT` Changes
     > ` git commit -m "moving wknd" `
-10. Push the latest changes to Remote Origin GitHub
+11. Push the latest changes to Remote Origin GitHub
     > ` git push -f origin master `
-11. Resulting GitHub will look something like:
+12. Resulting GitHub will look something like:
 
     > ![wknd_project_3](./resources/wknd_project_3.PNG) ![wknd_project_4](./resources/wknd_project_4.PNG)
     
@@ -157,7 +158,7 @@ Exact Steps and Git Commands are as below:
 
     > ` git checkout master `
 
-    > ` git remote add WKND-Events <path to cloned WKND-Events Git repository> ` <br/> e.g.  ` git remote add WKND-Events https://github.com/varunmitra/WKND-Events.git `
+    > ` git remote add WKND-Events <path to cloned WKND-Events Git repository> ` <br/> e.g.  ` git remote add WKND-Events https://github.com/varunmitra/WKND_Events.git `
 
 
     > ` git fetch WKND-Events `
@@ -193,4 +194,4 @@ Exact Steps and Git Commands are as below:
 
 4. Push to Cloud Manager GitHub
 
-    > ` git push -u cm_repo master `
+    > ` git push -u cm_repo master:merge `

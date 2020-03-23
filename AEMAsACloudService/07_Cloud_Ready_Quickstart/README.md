@@ -25,9 +25,7 @@ The quictstart jar version is subject to change very frequently. There is a corr
 ### Lesson Context
 In this lesson we will learn how to download and setup the local AEM Environment using the Cloud Ready Quickstart JAR.
 
-1. Go to [Cloud Ready Quickstart Artifactory](https://artifactory.corp.adobe.com/artifactory/maven-aem-release-local/com/day/cq/cq-quickstart-cloudready/V16061/)
-
-* Note : This is internal link, we should have a public link by GA 
+1. Go to [Software Distribution Portal](https://downloads.experiencecloud.adobe.com/)
 
 2. Find the latest version released (It should be at end of the page) and click to see list of available jars, docs, files etc for the version.
 3. Download the jar file which should be named as *cq-quickstart-cloudready-V16068.jar* - Version name will be different

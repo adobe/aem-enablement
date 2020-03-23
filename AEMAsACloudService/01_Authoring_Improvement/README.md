@@ -7,26 +7,37 @@ Versioning pages before deletion allows restoring them after deletion. Page vers
 
 Page versioning before deletion is now optional. The default behavior is "yes", to ensure consistency with previous behavior.
 
+
+#### Pre-requisite
+You need AEM as a Cloud Service with author tier. 
+
 #### Lesson Context
 
-In this scenario we will understand how pages are archived in AEM Sites 
+In this scenario we will understand how pages are archived in AEM Sites.
 
 ### Step 1. Initiate a delete operation in AEM Sites
 
-1. Select (checked selection) sub-page in AEM Sites.
+1. In Author Tier, Go to AEM > Sites and verify if you have a sample site present .
 
-2. Select the ` Delete (Backspace) `
+ >  * Note :For most training environments, author tier may already have AEM sample site. 
+>
+  > * Incase you don't see a site deployed in your author tier then you can follow [Scenario 4 - Deploy Custom Project](../04_Deploy_Custom_Project/README.md) and then comeback to this scenario.
 
-    > ![1.png](./images/1.png)
+   
+2. Click checkbox for any sub page in available AEM site.
 
-3. Verify ` Do you want to archive pages before deletion? ` is checked.
+3. Select **Delete ( or backspace as keyboard shortcut)** from the top menu.
 
-    > ![2.png](./images/2.png)
+    ![1.png](./images/1.png)
 
-4. Click ` Delete `
-5. Repeat Steps 1 - 3 with ` Do you want to archive pages before deletion? ` flag unchecked.
+4. You should get a pop-up with message **Do you want to archive pages before deletion ?**, Ensure the check-box is checked.
 
-    > ` Archiving pages here is synonymous with creating versions for respective pages. The info panel further explains what can be achieved with "archiving" pages before deletion, namely being able to restore them later.  `
+     ![2.png](./images/2.png)
+
+5. Click **Delete**
+6. Repeat Steps 2 - 5 with **Do you want to archive pages before deletion?** flag unchecked.
+
+    > Note :  Archiving pages here is synonymous with creating versions for respective pages. The info panel further explains what can be achieved with "archiving" pages before deletion, namely being able to restore them later.  
 
 
 
