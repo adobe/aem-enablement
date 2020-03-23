@@ -59,7 +59,7 @@ In this lesson we will create an AEM project and update it for the Cloud Ready Q
         -DgroupId=com.adobe \
         -DappId=adobe \
         -DappTitle=Adobe
-        ```
+    ```
 
 2. Once the project is generated , Go to parent pom.xml and check for the following dependency.
 
