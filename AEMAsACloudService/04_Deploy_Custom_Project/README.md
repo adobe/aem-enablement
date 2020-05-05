@@ -1,81 +1,77 @@
 # Deploy Your First Project to AEM Cloud
-
-In this scenario , we will create and deploy our locally generated project to AEM Cloud.
+In this scenario , we will deploy our locally generated project to AEM Cloud.
 
 #### Cloud Manager
 
 Cloud Manager is in charge of all orchestrations and deployments to the instances of the AEM Cloud Service.
 
-* It is mandatory, and the only way to build, test and to deploy the customer application both to the Author and the Publish services.
+* It is mandatory, and the only way to build, to test and to deploy the customer application both to the Author and the Publish services.
 
 ![Cloud Manager ](./assets/cloudmanager.png)
 
 #### Pre-requisites
 * A provisioned AEM Cloud Program 
 * Access to the Cloud Manager Git Repository
-
-#### Find Git Information.
-
-1. Go to your program in Program Overview of Cloud Manager
-2. Check Pipeline Section
-
-![Pipelines](./assets/no-pipeline.png)
-
-3. If you don't have a pipeline , Click Add Button to see Pipeline creation page
-
-![PipelinesDetails](./assets/pipeline-details.png)
-
-3(a). Go to Git Branch section and Click on Manage Git button. Now you should be able to see all details about git.
-
-![ManagerGit](./assets/git-info.png)
-
-4. If you have pipeline created , Click on Manage Git Button directly and you should be able to see all required details about git. 
+* [GitHub Desktop](https://desktop.github.com/)
 
 
-#### Clone Project To Local Development Machine
-1.  Clone your project based on  git details you have got in last step. Git clone command should look as following.
 
-```
-git clone https://git.cloudmanager.adobe.com/wwXXXXXX/AEM-XXXXX/
 
-```
+### Clone All Demo GitHub
 
-2. If there is already a sample project - You are good to make changes or delete existing project and create a new one.
-3. If there is no project in git master branch. 
-4.  Create a new project using the latest Archetype . See [AEM Project Archetype](https://github.com/adobe/aem-project-archetype) for more information.
+1. Launch GitHub Desktop.
+2. Go to File > Clone Repository
+3. Select the URL tab 
+4. Add the following GitHub URL
+    > https://github.com/adobe/aem-guides-wknd.git
 
-Alternatively You may run followin command to create project using Archetype 23
+    > ![1.PNG](./assets/1.PNG)
 
-```
-mvn -B archetype:generate \
-  -DarchetypeGroupId=com.adobe.granite.archetypes \
-  -DarchetypeArtifactId=aem-project-archetype \
-  -DarchetypeVersion=23 \
-  -DgroupId="com.adobe" \
-  -Dpackage="com.adobe.training"\
-  -DappId="training" \
-  -DincludeExamples="y" \
-  -DappTitle="Training"
+5. Clone
+6. Click `Fetch Origin`
+    > ![3.png](./assets/3.png)
+7. Go to Repository > Show in Explorer 
+    > ![2.PNG](./assets/2.PNG)
+8. Keep the Explorer/Finder Window Open.
 
-```
- 5. Add & Push the project to Git Repository ( git commands are for reference only)
+#### Clone Cloud Manager GIT Repository
+   
 
-```
-git add *
-git add .gitignore
-git commit -m "Training Project "
-git push --set-upstream origin master
-```
+1. Navigate to Cloud Manager Program.
+    > ![cm_program](./assets/cm_program.PNG)
+2. Click on Manage GIT Button
+    > ![manage GIT](./assets/manageGIT.png)
+3. Copy the GIT URL and Password to a text file for later use
+    > ![copy GIT URL and Password](./assets/copyLink.png)
+5. Navigate back to GitHub Desktop
+6. Go to File > Clone Repository
+7. Select the URL tab 
+8. Add the following Cloud Manager GitHub URL
+9. Clone
+10. Authenticate using User Id and Password copied from Cloud Manager UI
+11. Click `Fetch Origin`
+    > ![3.png](./assets/3.png)
+12. Go to Repository > Show in Explorer
+13. Delete all the content except `.git` folder
+14. Copy the all the content, excluding `.git` folder from the aem-guides-wknd Git Folder
+15. Paste the content in the Cloud Manager Git Repository Folder.
+16. Provide a commit message and `Commit to Master`
+    > ![4.png](./assets/4.PNG)
+17. Click `Push to Master`
+    >![5.png](./assets/5.png)
+    
 
-### Step 2. Create a Non-Production Pipeline
+    
+
+
+### Step 2. Create a Non-Production Deployment Pipeline
 1. Go to AEM Cloud Service **Programs** [URL]
 2. Go to **Non-Production Pipeline** Card > Click Add 
 3. Add Pipeline Name
-4. Add **Pipeline Type** as **Code Quality Pipeline**
+4. Add **Pipeline Type** as **Deployment Pipeline**
 5. Select master **Git Branch** 
 6. Select Pipeline Options **Manual**
 
-![High Level Architure ](./assets/pipeline.jpg)
 
 ### Step 3. Deploy the project
 1. Hover over the created pipeline and click **Build**
