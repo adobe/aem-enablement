@@ -63,10 +63,10 @@ This scenario comprises of 3 parts:
     > ![wknd_project_1](./resources/wknd_project_1.PNG)
 
 5. Create a new `pom.xml` file. 
-6. Update the `pom.xml` file with the following [code](https://git.corp.adobe.com/gist/vmitra/24c136f38b8d9e6597b14dca917a22a2)
+6. Update the `pom.xml` file with the following [code](https://gist.github.com/varunmitra/f4206ecd20ca824b5f4b72bed0384f5d)
 7. Add `pom.xml` to the current project
     > ` git add pom.xml`
-8. Update the `pom.xml` file for the `dispatcher` module with the following [code](https://git.corp.adobe.com/gist/vmitra/8ddbce3097fb73eb2914bbf3e165f55d)
+8. Update the `pom.xml` file for the `dispatcher` module with the following [code](https://gist.github.com/varunmitra/509055ce97b5365bb4aaf76e30fd7b53)
 9. Test project sanity by running `mvn verify`
 10. Commit the `GIT` Changes
     > ` git commit -m "moving wknd" `
@@ -118,7 +118,7 @@ This scenario comprises of 3 parts:
     > ![wknd_events_project_1](./resources/wknd_events_project_1.PNG) ![wknd_events_project_2](./resources/wknd_events_project_2.PNG) 
 
 5. Create a new `pom.xml` file. 
-6. Update the `pom.xml` file with the following [code](https://git.corp.adobe.com/gist/vmitra/5467d0478ac2d2fa07f7630d8e9a4c0a)
+6. Update the `pom.xml` file with the following [code](https://gist.github.com/varunmitra/a0d1743aef696859329284306f0afd2a)
 7. Add `pom.xml` to the current project
     > ` git add pom.xml`
 8. Test project sanity by running `mvn verify`
@@ -176,7 +176,7 @@ Exact Steps and Git Commands are as below:
     > ` git merge WKND-Events --allow-unrelated-histories `
 
 
-    > Fix the Merge errors. pom.xml should look something like https://git.corp.adobe.com/gist/vmitra/7dc114b64c8c240677490727e89987b2 
+    > Fix the Merge errors. pom.xml should look something like https://gist.github.com/varunmitra/783c4944cc5c2c5294790ca85186bc00
 
 
      > Verify the directory strcture: <br/> For Mac : ` ls ` <br/>
