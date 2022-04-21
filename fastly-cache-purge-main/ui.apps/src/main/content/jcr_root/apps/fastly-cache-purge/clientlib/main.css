@@ -1,0 +1,17 @@
+._coral-Tooltip-label {
+  max-width: 500px;
+}
+
+.blinking {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+textarea {
+  resize: none;
+}

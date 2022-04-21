@@ -1,0 +1,4 @@
+{
+  "fastlyHost": "$[env:FASTLY_HOST;default=http://localhost:4503]",
+  "fastlyPurgeKey": "$[secret:FASTLY_PURGE_KEY]"
+}

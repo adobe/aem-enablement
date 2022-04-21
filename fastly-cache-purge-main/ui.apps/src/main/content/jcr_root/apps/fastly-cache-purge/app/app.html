@@ -1,0 +1,43 @@
+
+<div style="margin:0 auto; max-width:900px">
+  <h2 class="coral-Heading coral-Heading--2">Invalidate Cache</h2>
+  <div>
+    <form class="coral-Form coral-Form--vertical u-columnLarge" style="min-width:400px;margin:0 auto">
+      <section class="coral-Form-fieldset">
+        <div class="coral-Form-fieldwrapper">
+          <label class="coral-Form-fieldlabel">Fastly Publish Host, including protocol (http/https)</label>
+          <sly data-sly-use.purger="com.acs.core.services.FastlyPurger"></sly>
+          <coral-autocomplete id="publish-host" class="coral-Form-field"  name="Fastly Publish Host" placeholder="Fastly Publish Host" match="startswith">
+            <coral-autocomplete-item selected="true" value="${purger.host}">${helper.publishDomain}</coral-autocomplete-item>
+          </coral-autocomplete>
+          <coral-tooltip id="host-error" interaction="off" variant="error" placement="right" target="#publish-host"></coral-tooltip>
+        </div>
+
+        <div class="coral-Form-fieldwrapper">
+          <label class="coral-Form-fieldlabel" id="paths-label">Paths to Invalidate (seperate with new line)</label>
+          <textarea id="paths" rows="10" is="coral-textarea" placeholder="Paths" name="field" value="" style="width:100%" labelledby="paths-label" invalid></textarea>
+          <coral-tooltip id="paths-error" interaction="off" variant="error" placement="right" target="#paths">Invalid Entries: <br> <p id="invalid-paths"></p></coral-tooltip>
+          <coral-icon class="coral-Form-fieldinfo" icon="infoCircle" size="S" id="coral-form-aligned-inputgroup-fieldinfo"></coral-icon>
+          <coral-tooltip variant="info" placement="right" target="#coral-form-aligned-inputgroup-fieldinfo">Ensure these are paths that start with "/" and are the published paths NOT AEM content paths.</coral-tooltip>
+        </div>
+        </div>
+        <div class="coral-Form-fieldwrapper">
+          <button id="invalidate" is="coral-button" class="coral-Form-field" variant="primary" type="button">Invalidate</button>
+        </div>
+      </section>
+    </form>
+    <h3 class="coral-Heading coral-Heading--2" >Invalidatation Result:</h3>
+
+    <coral-list id="invalidate-list">
+      
+    </coral-list>
+
+  <coral-dialog id="request-info">
+    <h3 class="coral-Heading coral-Heading--3">Cache Purge Request</h3>
+    <h4 class="coral-Heading coral-Heading--4">Path <b id="request-info-url"></b></h4>
+    <h4 class="coral-Heading coral-Heading--4">Response: </b></h4>
+    <textarea id="request-info-response" rows="10" is="coral-textarea" placeholder="Body" name="field" value="" style="width:100%" labelledby="paths-label"></textarea>
+  </coral-dialog>
+
+  </div>
+</div>
