@@ -31,13 +31,14 @@ In this lesson we will learn how to download and setup the local AEM Environment
 3. Download the jar file which should be named as *cq-quickstart-cloudready-V16068.jar* - Version name will be different
 4. Put the downloaded jar file and license file in one folder.
 5.  Run the following command to unpack and start your local cloud ready development environment
-   ```
-   $> java -jar cq-quickstart-cloudready-V16061.jar -unpack
+   
+   ``` shell
+   $> java -jar aem-sdk-quickstart-2020.XX.XXXX.XXXXXXXXTXXXXXXZ-XXXXXX.jar -unpack
    $> cd crx-quickstart/bin
    $> ./start
    $> tail -f ../logs/error.log
+   ```   
 
-   ```     
 6. Go to http://localhost:4502 to verify that AEM is running. ( Port may change if 4502 is already occupied, you may check logs files to know the current port on which AEM is running.)
 
 
@@ -48,30 +49,35 @@ In this lesson we will create an AEM project and update it for the Cloud Ready Q
 
 
 1. Create a new project using the latest Archetype
-    ```
+
+    ``` shell
     mvn archetype:generate \
         -DarchetypeGroupId=com.adobe.granite.archetypes \
         -DarchetypeArtifactId=aem-project-archetype \
-        -DarchetypeVersion=20
-        ```
-2. Once the project is generated , Go to parent pom.xml and add the following dependencies.
+        -DarchetypeVersion=23 \
+        -DaemVersion=cloud \
+        -DgroupId=com.adobe \
+        -DappId=adobe \
+        -DappTitle=Adobe
+    ```
 
-```
+2. Once the project is generated , Go to parent pom.xml and check for the following dependency.
+
+``` xml
 <dependency>
-    <groupId>com.day.cq</groupId>
-    <artifactId>cq-quickstart-cloudready</artifactId>
-    <version>V16061</version>
-    <classifier>global-apis</classifier>
+    <groupId>com.adobe.aem</groupId>
+    <artifactId>aem-sdk-api</artifactId>
+    <version>${aem.sdk.api}</version>
     <scope>provided</scope>
 </dependency>
-
 ```
+
 3. Deploy the project
-   ```
+
+   ``` shell
    $> cd projectfoldername
    $> mvn clean install -PautoInstallPackage
 
    ```
 
 4. Go to AEM > Sites and verify your newly created site in AEM.
-
