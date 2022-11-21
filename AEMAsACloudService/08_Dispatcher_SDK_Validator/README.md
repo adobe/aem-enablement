@@ -31,7 +31,7 @@ It allows customers to run the same validation that Cloud Manager will perform w
 ### Key Takeaways
 
 * Setup Dispatcher SDK Validator on your local machine
-* Use the Dispatcher SDK Validator to validate dispatcher Configureations
+* Use the Dispatcher SDK Validator to validate dispatcher Configurations
 
 
 ### Pre-requisites
